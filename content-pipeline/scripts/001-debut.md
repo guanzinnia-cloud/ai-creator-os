@@ -90,24 +90,24 @@ episode: 001
 
 ## 第二节 · 知识交付（0:30-2:30）
 
-### 模块 1：先定义用户，再定义内容（0:30-0:55）
+### 模块 1：DOMA——先定义业务本体，再设计系统（0:30-0:55）
 
-**画面**：一张用户分群表格出现在屏幕上，标注 DOMA 四个象限
+**画面**：展示 DOMA 四层架构图（Data → Ontology → Models → Agents），Ontology 层高亮标注"博主定位 / 用户画像 / 内容分类"
 
 **口播**：
 
-做内容的第一步不是写脚本，是搞清楚给谁看。
+做内容的第一步不是写脚本，甚至不是搞清楚给谁看——而是定义清楚你的**业务本体**。
 
-我用了一个经典的 PM 框架——**DOMA 框架**，来推导我的核心用户群：
+中科闻歌有一个框架叫 **DOMA 决策智能架构**：
 
-- **Demographics**：25-35 岁，科技行业，有副业焦虑的产品经理和运营
-- **Objectives**：想利用 AI 做副业，但不知道从哪开始
-- **Mindsets**：不信割韭菜，信方法论；想系统化，不想打零工
-- **Aspects**：关注 AI 产品、跨境电商、内容商业化的交叉地带
+- **Data**：热点数据、互动数据、用户行为数据——这是原材料
+- **Ontology（本体）**：业务逻辑的结构化表达——我的博主定位、用户画像体系、内容分类标签——**没有本体，大模型就不懂业务**
+- **Models**：Claude、Kimi 这些模型负责理解和判断
+- **Agents**：把分析变成动作的执行层
 
-一旦用户画像清晰了，选题方向就完全明确了。
+所以我的第一步不是"接个模型试试"，而是先把"我是谁、给谁看、做什么内容"这套本体定义清楚，再让模型和 Agent 在结构化规则里运行。
 
-> **画面文字锚点**：「DOMA → 用户 → 内容 → 系统」
+> **画面文字锚点**：「没有本体，大模型就不懂业务」
 > 持续时间 3 秒
 
 ### 模块 2：系统架构——Hybrid 多 Agent 拓扑（0:55-1:25）
@@ -116,7 +116,7 @@ episode: 001
 
 **口播**：
 
-有了用户画像，下一步是搭系统。我设计了一套 **Hybrid 拓扑** 的 Agent 架构——
+DOMA 的最后一层——Agent 层——我选择了 **Hybrid 拓扑** 来实现。
 
 系统里有 6 个专业化 Agent，每个负责一个环节：
 
@@ -233,8 +233,8 @@ episode: 001
 >
 > **Knowledge Delivery (0:30-2:30)**:
 >
-> *Step 1: Define Your User First*
-> I used the **DOMA framework** to derive my core audience — demographics, objectives, mindsets, aspects. Clear user profile = clear content direction.
+> *Step 1: Define Your Business Ontology First*
+> I used the **DOMA decision intelligence architecture**: Data is the raw material, **Ontology is the structured business logic** — creator positioning, user profiles, content taxonomy. No ontology, the LLM doesn't understand your business. Models reason, Agents execute. Clear ontology = clear system design.
 >
 > *Step 2: Hybrid Multi-Agent Topology*
 > Built a **Hybrid topology** system with 6 specialized agents: Trend Scout, User Researcher, Video Architect, Knowledge Curator, Platform Engineer, Monetization Strategist. They communicate dynamically — not a linear pipeline, a coordinated network.
@@ -278,8 +278,8 @@ episode: 001
 >
 > **知识交付**：
 >
-> *第一：先定义用户*
-> 我用 **DOMA 框架** 搵出我嘅核心用户——人口属性、目标、心态、关注点。用户清嗮楚，选题自然有方向。
+> *第一：DOMA 业务本体*
+> 我用 **DOMA 决策智能架构** 来设计成个系统——Data 係原材料，Ontology 係业务逻辑嘅结构化表达（博主定位、用户画像、内容分类），Model 做判断，Agent 做执行。本体定义得越清楚，系统就越聪明。
 >
 > *第二：Hybrid 多 Agent 架构*
 > 我砌咗个 **Hybrid 拓扑** 系统——6 个 Agent 各司其职，唔係流水线式传递，而係互相沟通、动态协调。
