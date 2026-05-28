@@ -1,140 +1,126 @@
-# AI Creator OS —— Agent-Native Content Operating System
+# AI Creator OS
 
-> 一个基于 DOMA 决策智能架构和 Hybrid 多 Agent 拓扑的 Self-improving 内容操作系统，支持动态领域匹配与中/英/粤三语视频自动生产。
-
-[![GitHub](https://img.shields.io/badge/GitHub-ai--creator--os-black)](https://github.com/guanzinnia-cloud/ai-creator-os)
-[![License](https://img.shields.io/badge/License-MIT-green)]()
+> **产品官网**：[https://ai-creator-os.vercel.app](https://ai-creator-os.vercel.app)  
+> **一句话**：一个基于 DOMA 决策智能架构和 Agent Economics 定价模型的 Self-improving 内容操作系统。
 
 ---
 
-## 基本介绍
-
-### Why：为什么做这个项目？
-作为 AI 产品经理，我相信 **"Dogfooding"**——自己先用 AI 搭建完整业务闭环，才能真正理解 Agent 编排、多模态生成、全球化运营的痛点。市面上工具都是单点（ChatGPT 写文案、剪映剪视频），缺乏**端到端的 Agent 协作系统**。我想做一个**越用越强**的内容工厂，同时作为 GitHub 作品集。
-
-### What：系统架构
+## 🏗️ 产品架构
 
 ```
 ┌─────────────────────────────────────────┐
-│  输出层：小红书 / B站 / YouTube 三语视频     │
+│  输出层：小红书 / B站 / YouTube 三语视频    │
 ├─────────────────────────────────────────┤
-│  决策层：6 个 Self-improving Agent 编排    │
-│  热点 → 用户 → 创作 → 知识库 → 运营 → 商业化│
+│  决策层：6 个 Self-improving Agent        │
+│  热点 → 用户 → 脚本 → 知识库 → 运营 → 商业化 │
 ├─────────────────────────────────────────┤
-│  基础设施：Claude Code + GitHub + 飞书 + Dify│
-│  知识库 + Skill 体系 + 版本控制 + 产品化     │
+│  基础设施：Claude Code + Dify + GitHub    │
+│  知识库 + Skill 体系 + 版本控制 + Vercel  │
 └─────────────────────────────────────────┘
 ```
 
-### How：方法论深度
-- **DOMA 决策智能架构**（中科闻歌）：Data → Ontology → Models → Agents。核心判断："没有本体，大模型就不懂业务"。
-- **Andrew Ng 四支柱**：Reflection / Tool Use / Planning / Multi-Agent。
-- **T.A.M.T. 单 Agent 设计框架**：Task / Answer / Model / Tools。
-- **JTBD + 四层需求模型**：Wants → Demand → Need → Requirement，确保内容不是自嗨。
-- **TDD-R 自我迭代**：Train → Diagnose → Deploy → Reflect，每个 Agent 根据视频数据自动修正策略。
+---
 
-### Result：当前成果
-- 6 大 Agent Skill 全部就位，遵循统一的 7 段式 Prompt 结构标准
-- 结构化知识库（DOMA、四支柱、T.A.M.T.、JTBD、用户洞察、项目复盘）
-- 第一条三语视频脚本完成平台差异化适配（小红书 90s / B站 5min / YouTube 7min）
-- 动态领域匹配支持：香港求职 / 深圳求职 / 港深双城生活 / AI产品能力 / 跨境运营 / AI科技趋势
+## 💡 两大核心设计
 
-### Next Step
-- 短期：完成剩余 5 个 Agent 的 Dify Chatflow，串成 Workflow
-- 中期：发布 10 条视频，验证数据回流和自我迭代机制
-- 长期：开源为模板，帮助更多 AI PM 用系统化方法做内容副业
+### 设计 1：知问 —— 基于业务认知网的 Agent 快速制作企业
+
+> "没有本体，大模型就不懂业务。"
+
+借鉴 **DIP 决策智能平台**的本体建模方法论，构建了个人版业务认知网：
+
+| DIP 企业级 | AI Creator OS 个人级 |
+|-----------|---------------------|
+| 业务对象 | 细分用户群、内容类型、平台规则 |
+| 业务关系 | 用户-痛点-内容-平台关联图谱 |
+| 业务认知网 | 博主定位体系 + 用户画像本体 + 内容分类体系 |
+| 智能判断 | 6 个 Agent 的 Hybrid 拓扑协作 |
+| 推动行动 | 内容生产流水线 + 飞书数据回流 |
+
+**方法论栈**：DOMA → 四支柱 → T.A.M.T. → JTBD + 四层需求
+
+### 设计 2：交易链路 —— Agent Economics 定价模型
+
+> "用户购买的是任务完成，厂商计量的是计算过程。"
+
+订阅制在 Agent 场景下的成本不可预测问题（同任务 Token 消耗存在数百倍差异），揭示核心矛盾：**订阅制无法覆盖 Agent 不可预测的 Token 消耗**。
+
+三层计费结构：
+
+| 层级 | 模式 | 定价 | 交付形态 |
+|------|------|------|---------|
+| **Free** | 体验 | $0 | 单 Agent 基础功能 |
+| **Pro** | 订阅+超额按量 | $9.9-29.9/月 | 多 Agent Workflow + 知识库 |
+| **Enterprise** | 私有化+效果付费 | 定制 | 本地模型 + 定制 Ontology |
+
+**核心公式**：
+- LTV/CAC > 3（SaaS 健康基准）
+- 效果付费：按任务完成量计费（视频数/互动增量），而非不可预测的 Token
+- 降本策略：Edge-TTS + Remotion 替代云端 API，成本降 80-100%
 
 ---
 
-## 系统架构详解
+## 🤖 Agent-Based 产品设计思维
 
-### 6 大 Agent（Hybrid 拓扑）
+**不是「人找工具」，而是「人编排 Agent 团队」完成业务闭环。**
 
-| Agent | 角色 | 核心能力 | 自我迭代机制 |
+### Workflow 流水线
+```
+灵感输入 → 用户建模 → 热点匹配 → 脚本创作 → 商业化评估
+```
+
+### TDD-R 自我迭代机制
+每个 Agent 内置 **Train → Diagnose → Deploy → Reflect** 循环：
+- **Train**：输入历史数据和行业知识
+- **Diagnose**：视频发布后抓取互动数据，诊断表现
+- **Deploy**：根据诊断结果更新策略参数
+- **Reflect**：周期性回顾，提炼经验，优化系统设计
+
+---
+
+## 📦 6 个 Self-improving Skill
+
+| Skill | 角色 | 核心能力 | 自我迭代指标 |
 |-------|------|---------|-------------|
-| `trend-intelligence-scout` | 热点侦察兵 | 多平台热点抓取、选题推荐、动态领域匹配 | 预测准确度每周校准 |
-| `user-research-architect` | 用户建模师 | JTBD 推导、四层需求映射、痛点热力图 | 根据视频数据自动修正画像权重 |
-| `video-content-architect` | 内容架构师 | 脚本创作、多语适配、平台差异化、A/B-Ready 预埋 | 爆款脚本自动提取模板 |
-| `knowledge-os-curator` | 知识库管家 | 自动索引、按需检索、关联图谱、入库处理 | 知识缺口自动触发补充学习 |
-| `platform-growth-engineer` | 平台运营官 | 三平台诊断、A/B-Ready 策略评估、数据看板 | 策略效果自动标记有效/无效 |
-| `monetization-strategist` | 商业化顾问 | 渐进式变现路径、合作评估、产品化建议 | 合作后更新品牌库和报价模型 |
-
-### 未来演进：Hierarchical Manager 模式
-
-```
-Manager Agent（决策中枢）
-├── 情报层：Trend Scout + User Research + Knowledge Curator
-├── 执行层：Video Architect
-└── 输出层：Platform Engineer + Monetization Strategy + Harness Eval
-```
+| `trend-intelligence-scout` | 热点侦察兵 | 多平台抓取、选题推荐、动态领域匹配 | 选题采纳率与视频表现相关性 |
+| `user-research-architect` | 用户建模师 | JTBD 推导、四层需求、痛点热力图 | 完播率与用户画像匹配度 |
+| `video-content-architect` | 内容架构师 | 脚本创作、多语适配、A/B-Ready 预埋 | 爆款脚本自动提取模板 |
+| `knowledge-os-curator` | 知识库管家 | 自动索引、按需检索、关联图谱 | 知识调用准确率 |
+| `platform-growth-engineer` | 平台运营官 | 三平台诊断、A/B 策略评估、数据看板 | 粉丝增长率、爆款率 |
+| `monetization-strategist` | 商业化顾问 | Agent Economics 定价、私有化部署、LTV/CAC | 变现效率、客户续约率 |
 
 ---
 
-## 知识库结构
-
-```
-knowledge-base/
-├── 01-agent-architecture/       # Agent 设计方法论
-│   ├── doma-framework.md          # DOMA 决策智能架构
-│   ├── four-pillars.md            # Andrew Ng 四支柱
-│   ├── tamt-framework.md          # T.A.M.T. 单 Agent 设计
-│   ├── multi-agent-topologies.md  # 多 Agent 拓扑结构
-│   ├── harness-evaluation.md      # 质量保障层
-│   ├── mcp-integration.md         # MCP 接入规划
-│   └── hierarchical-topology.md   # 层级架构优化
-├── 02-user-research/              # 用户洞察与分层
-│   └── user-segments.md           # JTBD + 四层需求模型
-├── 03-content-strategy/           # 内容策略与运营（待补充）
-├── 04-project-experience/         # 个人项目复盘（待补充）
-├── 05-industry-trends/            # 行业趋势与竞品（待补充）
-└── 06-tools-resources/            # 工具与资源（待补充）
-```
-
----
-
-## 技术栈
+## 🛠️ 技术栈
 
 | 层级 | 工具 | 用途 |
 |------|------|------|
-| **Agent 编排** | Claude Code + Dify | Skill 开发 + Chatflow 产品化 |
-| **模型层** | Claude / Qwen / DeepSeek | 推理中枢（逐步迁移至最优模型） |
-| **知识库** | 本地 Markdown + 飞书多维表格 | 结构化知识存储 + 人类维护备份 |
+| **Agent 编排** | Claude Code + Dify | Skill 开发 + Chatflow/Workflow 产品化 |
+| **模型层** | Claude / Qwen / DeepSeek | 推理中枢 |
+| **知识库** | 本地 Markdown + 飞书多维表格 | 结构化知识存储 |
 | **版本控制** | GitHub | Skill 即代码，作品集即产品 |
-| **内容生产** | 剪映 / Remotion（规划） | 口播录屏 + 半自动剪辑 |
-| **数据看板** | 飞书多维表格（规划 API 自动化） | 视频数据、选题池、用户洞察 |
+| **前端** | Trae + Vercel | 产品官网部署 |
+| **内容生产** | 剪映 / Remotion | 口播录屏 + 半自动剪辑 |
 
 ---
 
-## Roadmap
+## 🚀 可交互 Demo
 
-| 阶段 | 目标 | 状态 |
-|------|------|------|
-| **Skill 验证** | 6 个 Agent Skill 全部就位 | 完成 |
-| **单 Agent Chatflow** | 热点抓取 + 内容创作 Dify 验证 | 进行中 |
-| **Workflow 编排** | 选题 → 脚本 → 运营 串成流水线 | 待开始 |
-| **视频发布** | 发布 10 条视频，验证数据回流 | 待开始 |
-| **产品化封装** | Dify Web App 上线 + GitHub Pages 作品集 | 待开始 |
+- **产品官网**：[https://ai-creator-os.vercel.app](https://ai-creator-os.vercel.app)
+- **Dify Workflow**（4 节点 Agent 接力）：[链接占位]
+- **Dify Chatflow**（单 Agent 验证）：[链接占位]
 
 ---
 
-## 如何运行（本地）
+## 📬 求职方向
 
-```bash
-# 克隆仓库
-git clone https://github.com/guanzinnia-cloud/ai-creator-os.git
-cd ai-creator-os
-
-# 查看 Skill 体系
-ls skills/
-
-# 查看知识库
-ls knowledge-base/
-
-# 在 Claude Code 中使用
-claud
-# /skills trend-intelligence-scout
-```
+- 云产品运营
+- AI 应用产品经理
+- 产品策划
+- 智能体产品经理
+- AI 创新业务产品经理
+- AI 研究
 
 ---
 
-*Built with VibeCoding paradigm. 6 Agents, 1 human, infinite scalability.*
+*6 Agents, 1 human.*
