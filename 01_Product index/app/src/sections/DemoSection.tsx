@@ -47,7 +47,7 @@ export default function DemoSection() {
           <span className="story-label">使用场景</span>
           <p className="story-text">
             早上刷到一条行业动态，你隐约觉得可以做成内容 —— 但不确定值不值得投入。
-            输入一句话灵感，4 个 Agent 在 30 秒内完成热点匹配、用户验证、脚本创作和商业化评估，
+            输入一句话灵感，4 个 Agent 在 30 秒内完成用户验证、热点匹配、脚本创作和商业化评估，
             输出一份可直接执行的内容方案。
           </p>
         </div>

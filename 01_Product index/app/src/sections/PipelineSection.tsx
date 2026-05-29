@@ -65,9 +65,9 @@ const evolutionSteps = [
 
 // 各 Agent 的自我进化指标
 const agentMetrics = [
+  { agent: '用户建模助手', metric: '视频完播率、用户画像匹配度、评论区痛点词频', color: '#05D5FA' },
   { agent: '热点侦查助手', metric: '选题采纳率、视频表现相关性', color: '#FF2A6D' },
   { agent: '内容架构助手', metric: '视频完播率、互动率、用户满意度评分', color: '#C1A8FF' },
-  { agent: '用户建模助手', metric: '视频完播率、用户画像匹配度、评论区痛点词频', color: '#05D5FA' },
   { agent: '知识库管家', metric: '知识调用准确率、知识缺口发现率', color: '#4AF6FF' },
   { agent: '平台运营官', metric: '粉丝增长率、爆款率、单条内容获客成本', color: '#FFD700' },
   { agent: '商业化顾问', metric: '变现效率（收入/粉丝数）、LTV/CAC、客户续约率', color: '#FF9F43' }

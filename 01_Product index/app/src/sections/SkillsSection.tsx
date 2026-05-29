@@ -19,6 +19,18 @@ interface Skill {
 
 const skills: Skill[] = [
   {
+    icon: '👤',
+    name: 'user-research-architect',
+    desc: 'JTBD 推导 + 四层需求模型 + 痛点热力图。用 Jobs-to-be-Done 替代简单的人口统计标签。',
+    scenario: '每次发布前，让 Agent 验证你的内容是否精准命中目标用户的 Job-to-be-Done。',
+    href: 'https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/user-research-architect/SKILL.md',
+    color: '#05D5FA',
+    metric: '视频完播率、用户画像匹配度、评论区痛点词频',
+    agentName: '用户建模助手',
+    chatflowStatus: 'live',
+    chatflowUrl: 'https://udify.app/chat/le5nzqDHAgzeKS3A',
+  },
+  {
     icon: '🔥',
     name: 'trend-intelligence-scout',
     desc: '多平台热点抓取与选题推荐，支持动态领域匹配。只推荐有知识增量的话题。',
@@ -41,18 +53,6 @@ const skills: Skill[] = [
     agentName: '内容架构助手',
     chatflowStatus: 'live',
     chatflowUrl: 'https://udify.app/chat/eUtE2pqQLOECuH14',
-  },
-  {
-    icon: '👤',
-    name: 'user-research-architect',
-    desc: 'JTBD 推导 + 四层需求模型 + 痛点热力图。用 Jobs-to-be-Done 替代简单的人口统计标签。',
-    scenario: '每次发布前，让 Agent 验证你的内容是否精准命中目标用户的 Job-to-be-Done。',
-    href: 'https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/user-research-architect/SKILL.md',
-    color: '#05D5FA',
-    metric: '视频完播率、用户画像匹配度、评论区痛点词频',
-    agentName: '用户建模助手',
-    chatflowStatus: 'live',
-    chatflowUrl: 'https://udify.app/chat/le5nzqDHAgzeKS3A',
   },
   {
     icon: '📚',
