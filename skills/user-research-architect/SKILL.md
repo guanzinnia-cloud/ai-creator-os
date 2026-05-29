@@ -3,7 +3,7 @@ name: user-research-architect
 description: 基于JTBD和四层需求模型推导细分用户群、痛点热力图和用户故事
 trigger: 当任务涉及用户画像、目标用户、痛点分析、需求调研、JTBD
 self_improving:
-  metric: 视频完播率与用户画像匹配度、评论区痛点词频
+  metric: 视频完播率、用户画像匹配度、评论区痛点词频
   feedback_loop: 运营Agent回传视频数据，自动修正画像权重和痛点优先级
   update_rule: 每发布5条视频或获得100条评论后，输出《用户洞察迭代报告》
 ---

@@ -3,7 +3,7 @@ name: video-content-architect
 description: 视频内容规划与创作助手
 trigger: 用户需要策划视频内容、撰写脚本、规划拍摄方案时
 self_improving:
-  metric: 视频完播率 & 互动率 & 用户满意度评分
+  metric: 视频完播率、互动率、用户满意度评分
   feedback_loop: |
     用户采纳脚本/方案并发布视频后，收集完播率、点赞率、评论率、转发率、粉丝增长数据。
     记录每期视频与对应脚本特征（结构/时长/开头钩子/节奏密度），作为反馈样本。

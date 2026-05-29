@@ -3,7 +3,7 @@ name: platform-growth-engineer
 description: 小红书/B站/YouTube三平台运营诊断、A/B-Ready策略有效性评估、数据驱动优化
 trigger: 当任务涉及运营、数据、增长、发布策略、平台诊断
 self_improving:
-  metric: 粉丝增长率、爆款率（互动率>8%）、单条内容获客成本
+  metric: 粉丝增长率、爆款率、单条内容获客成本
   feedback_loop: 策略执行后数据回传，自动标记有效/无效策略
   update_rule: 每月更新平台规则变动和算法应对策略
 ---

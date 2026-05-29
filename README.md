@@ -1,51 +1,89 @@
 # AI Creator OS
 
+> **品牌**：AI-1st Builder — THE AUTOMATED CREATIVE ENGINE  
 > **产品官网**：[https://ai-creator-os.vercel.app](https://ai-creator-os.vercel.app)  
-> **一句话**：一个基于 DOMA 决策智能架构和 Agent Economics 定价模型的 Self-improving 内容操作系统。
+> **当前部署**：[https://5x2svswmoafaa.ok.kimi.link](https://5x2svswmoafaa.ok.kimi.link)  
+> **一句话**：6 个 AI Agent 实时协作的自动化创意引擎，覆盖创作者从灵感到变现的全链路。
 
 ---
 
-## 🏗️ 产品架构
+## 产品定位
 
-```
-┌─────────────────────────────────────────┐
-│  输出层：小红书 / B站 / YouTube 三语视频    │
-├─────────────────────────────────────────┤
-│  决策层：6 个 Self-improving Agent        │
-│  热点 → 用户 → 脚本 → 知识库 → 运营 → 商业化 │
-├─────────────────────────────────────────┤
-│  基础设施：Claude Code + Dify + GitHub    │
-│  知识库 + Skill 体系 + 版本控制 + Vercel  │
-└─────────────────────────────────────────┘
-```
+**THE AUTOMATED CREATIVE ENGINE, REBUILT BY AGENTS.**
+
+AI-1st Builder 不是又一个 AI 写作工具。它是一个由 6 个专业 Agent 组成的协作网络，覆盖创作者从「灵感输入」到「内容落地」到「变现评估」的完整链路。每个 Agent 内置 TDD-R 自我迭代机制，发得越多，系统越精准。
+
+**热点洞察、用户建模、内容架构、知识管理、平台运营、商业化评估 —— 你负责灵感，它们负责落地。**
 
 ---
 
-## 💡 两大核心设计
+## 产品 01：Creator Workflow v1
 
-### 设计 1：知问 —— 基于业务认知网的 Agent 快速制作企业
+### 使用场景
 
-> "没有本体，大模型就不懂业务。"
+> 早上刷到一条行业动态，你隐约觉得可以做成内容 —— 但不确定值不值得投入。输入一句话灵感，4 个 Agent 在 30 秒内完成热点匹配、用户验证、脚本创作和商业化评估，输出一份可直接执行的内容方案。
 
-借鉴 **DIP 决策智能平台**的本体建模方法论，构建了个人版业务认知网：
+### 4 节点 Agent 接力
 
-| DIP 企业级 | AI Creator OS 个人级 |
-|-----------|---------------------|
-| 业务对象 | 细分用户群、内容类型、平台规则 |
-| 业务关系 | 用户-痛点-内容-平台关联图谱 |
-| 业务认知网 | 博主定位体系 + 用户画像本体 + 内容分类体系 |
-| 智能判断 | 6 个 Agent 的 Hybrid 拓扑协作 |
-| 推动行动 | 内容生产流水线 + 飞书数据回流 |
+| 节点 | Agent | 产出 |
+|------|-------|------|
+| 01 热点匹配 | `trend-intelligence-scout` | 灵感到热点的实时校准 |
+| 02 用户建模 | `user-research-architect` | JTBD 推导 + 痛点定位 |
+| 03 脚本创作 | `video-content-architect` | 多平台适配的内容产出 |
+| 04 商业化评估 | `monetization-strategist` | 变现路径与定价策略 |
 
-**方法论栈**：DOMA → 四支柱 → T.A.M.T. → JTBD + 四层需求
+**Dify Workflow 链接**：`YOUR_WORKFLOW_URL`
 
-### 设计 2：交易链路 —— Agent Economics 定价模型
+---
 
-> "用户购买的是任务完成，厂商计量的是计算过程。"
+## Agent 矩阵：6 Skill × 6 Chatflow
 
-订阅制在 Agent 场景下的成本不可预测问题（同任务 Token 消耗存在数百倍差异），揭示核心矛盾：**订阅制无法覆盖 Agent 不可预测的 Token 消耗**。
+每个 Skill 对应一个可交互的 Chatflow Agent，覆盖创作全链路。
 
-三层计费结构：
+| # | Skill | 对应 Agent | 使用场景 | 状态 |
+|---|-------|-----------|---------|------|
+| 1 | `trend-intelligence-scout` | 🔥 热点侦查助手 | 每天获取 3-5 个经过验证的热点选题，附带热度评分与关联知识标注 | ✅ 已上线 |
+| 2 | `video-content-architect` | 🎬 内容架构助手 | 输入一个话题，输出小红书/B站/YouTube 三平台的完整脚本 | ✅ 已上线 |
+| 3 | `user-research-architect` | 👤 用户建模助手 | 每次发布前，验证内容是否精准命中目标用户的 Job-to-be-Done | ✅ 已上线 |
+| 4 | `knowledge-os-curator` | 📚 知识库管家 | 上传学习笔记和资料，Agent 自动建立知识图谱，其他 Agent 随时调用 | 🔨 打造中 |
+| 5 | `platform-growth-engineer` | 📈 平台运营官 | 发布后立即获取三平台的运营诊断报告，明确下一步优化动作 | 🔨 打造中 |
+| 6 | `monetization-strategist` | 💼 商业化顾问 | 基于粉丝画像和内容数据，生成个性化的商业化路径与定价建议 | 🔨 打造中 |
+
+### 已上线 Agent 链接
+
+```html
+<!-- 热点侦查助手 -->
+<iframe src="YOUR_CHATFLOW_URL_1"></iframe>
+
+<!-- 内容架构助手 -->
+<iframe src="YOUR_CHATFLOW_URL_2"></iframe>
+
+<!-- 用户建模助手 -->
+<iframe src="YOUR_CHATFLOW_URL_3"></iframe>
+```
+
+### Skill 文档
+
+- [trend-intelligence-scout](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/trend-intelligence-scout/SKILL.md)
+- [video-content-architect](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/video-content-architect/SKILL.md)
+- [user-research-architect](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/user-research-architect/SKILL.md)
+- [knowledge-os-curator](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/knowledge-os-curator/SKILL.md)
+- [platform-growth-engineer](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/platform-growth-engineer/SKILL.md)
+- [monetization-strategist](https://github.com/guanzinnia-cloud/ai-creator-os/blob/main/skills/monetization-strategist/SKILL.md)
+
+---
+
+## 核心亮点
+
+### 亮点 1：认知层 — 业务知识图谱驱动
+
+每个 Agent 不是孤立模型，而是嵌入在业务认知网络中的节点。创作者画像、内容类型、平台规则构成三层本体，Agent 的每次输出都在知识图谱的约束下进行 —— 确保策略可落地，而非泛泛而谈。
+
+**方法论栈**：本体建模 → 四支柱框架 → T.A.M.T. → JTBD + 四层需求
+
+### 亮点 2：交易链路 — Agent Economics 定价引擎
+
+Agent 时代的成本结构被重写：同任务 Token 消耗存在数百倍波动，传统订阅制难以为继。三层计费模型（体验 / 订阅+按量 / 私有化+效果付费）配合 LTV/CAC 动态评估，让创作者经济的商业化路径清晰可见。
 
 | 层级 | 模式 | 定价 | 交付形态 |
 |------|------|------|---------|
@@ -53,24 +91,13 @@
 | **Pro** | 订阅+超额按量 | $9.9-29.9/月 | 多 Agent Workflow + 知识库 |
 | **Enterprise** | 私有化+效果付费 | 定制 | 本地模型 + 定制 Ontology |
 
-**核心公式**：
-- LTV/CAC > 3（SaaS 健康基准）
-- 效果付费：按任务完成量计费（视频数/互动增量），而非不可预测的 Token
-- 降本策略：Edge-TTS + Remotion 替代云端 API，成本降 80-100%
-
 ---
 
-## 🤖 Agent-Based 产品设计思维
+## 自我进化：TDD-R 迭代机制
 
-**不是「人找工具」，而是「人编排 Agent 团队」完成业务闭环。**
+**工作流**：灵感输入 → 热点匹配 → 用户建模 → 脚本创作 → 知识管理 → 商业化评估
 
-### Workflow 流水线
-```
-灵感输入 → 用户建模 → 热点匹配 → 脚本创作 → 商业化评估
-```
-
-### TDD-R 自我迭代机制
-每个 Agent 内置 **Train → Diagnose → Deploy → Reflect** 循环：
+每个 Agent 内置 **Train → Diagnose → Deploy → Reflect** 闭环：
 - **Train**：输入历史数据和行业知识
 - **Diagnose**：视频发布后抓取互动数据，诊断表现
 - **Deploy**：根据诊断结果更新策略参数
@@ -78,20 +105,7 @@
 
 ---
 
-## 📦 6 个 Self-improving Skill
-
-| Skill | 角色 | 核心能力 | 自我迭代指标 |
-|-------|------|---------|-------------|
-| `trend-intelligence-scout` | 热点侦察兵 | 多平台抓取、选题推荐、动态领域匹配 | 选题采纳率与视频表现相关性 |
-| `user-research-architect` | 用户建模师 | JTBD 推导、四层需求、痛点热力图 | 完播率与用户画像匹配度 |
-| `video-content-architect` | 内容架构师 | 脚本创作、多语适配、A/B-Ready 预埋 | 爆款脚本自动提取模板 |
-| `knowledge-os-curator` | 知识库管家 | 自动索引、按需检索、关联图谱 | 知识调用准确率 |
-| `platform-growth-engineer` | 平台运营官 | 三平台诊断、A/B 策略评估、数据看板 | 粉丝增长率、爆款率 |
-| `monetization-strategist` | 商业化顾问 | Agent Economics 定价、私有化部署、LTV/CAC | 变现效率、客户续约率 |
-
----
-
-## 🛠️ 技术栈
+## 技术栈
 
 | 层级 | 工具 | 用途 |
 |------|------|------|
@@ -99,20 +113,19 @@
 | **模型层** | Claude / Qwen / DeepSeek | 推理中枢 |
 | **知识库** | 本地 Markdown + 飞书多维表格 | 结构化知识存储 |
 | **版本控制** | GitHub | Skill 即代码，作品集即产品 |
-| **前端** | Trae + Vercel | 产品官网部署 |
+| **前端** | React + TypeScript + Tailwind CSS + Vercel | 产品官网 |
 | **内容生产** | 剪映 / Remotion | 口播录屏 + 半自动剪辑 |
 
 ---
 
-## 🚀 可交互 Demo
+## 部署
 
-- **产品官网**：[https://ai-creator-os.vercel.app](https://ai-creator-os.vercel.app)
-- **Dify Workflow**（4 节点 Agent 接力）：[链接占位]
-- **Dify Chatflow**（单 Agent 验证）：[链接占位]
+- **GitHub 仓库**：[https://github.com/guanzinnia-cloud/ai-creator-os](https://github.com/guanzinnia-cloud/ai-creator-os)
+- **部署平台**：Vercel
 
 ---
 
-## 📬 求职方向
+## 求职方向
 
 - 云产品运营
 - AI 应用产品经理

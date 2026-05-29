@@ -3,7 +3,7 @@ name: trend-intelligence-scout
 description: 多平台热点抓取与选题推荐 Agent，支持动态领域匹配
 trigger: 当任务涉及热点、选题、趋势、每日话题、平台热搜
 self_improving:
-  metric: 选题采纳率与视频表现相关性
+  metric: 选题采纳率、视频表现相关性
   feedback_loop: 追踪预测热点的实际爆发准确度，运营Agent回传数据
   update_rule: 每周优化关键词抓取源和过滤规则
 ---
