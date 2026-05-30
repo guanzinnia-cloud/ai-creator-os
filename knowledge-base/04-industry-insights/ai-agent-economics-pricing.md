@@ -1,7 +1,7 @@
 ---
 tags: [AI经济学, ToB定价, 商业化, SaaS, LTV/CAC, 腾讯云, CSIG]
-related: [02-user-research/user-segments.md]
-date: 2026-05-28
+related: [02-user-research/user-research-methodology.md, 04-industry-insights/agent-economics-business-operations.md]
+date: 2026-05-30
 ---
 
 # AI Agent 经济学与 ToB 商业化定价
@@ -163,3 +163,40 @@ date: 2026-05-28
 - "订阅制正在退化为流量入口，真正决定格局的是 API 定价、容量调度和 SLA 交付之间的平衡。"
 - "用户购买的是任务完成，厂商计量的是计算过程——这是 Agent 时代最大的定价错位。"
 - "大模型本质上不是内容分发，而是高成本计算服务，每一次调用都在消耗真实 GPU。"
+
+---
+
+## 附：2026年量化数据速查（补充自 agent-economics-business-operations）
+
+> 以下数据与 `04-industry-insights/agent-economics-business-operations.md` 交叉引用。
+
+### 模型定价区间（2026年5月）
+| 层级 | 输入价格（元/百万token） | 代表模型 |
+|------|------------------------|---------|
+| 海外旗舰 | ¥17.5-21 | GPT-4o, Claude 3.5 |
+| 国产旗舰 | ¥2.0 | Qwen3-Max, 混元Pro |
+| 性价比之选 | ¥0.8-1.2 | Qwen3.5-Plus, Hy3 preview, 豆包1.6 |
+| 长文本专用 | ¥0.5 | Qwen-Long |
+
+### RAG Agent 成本速算
+- **纯RAG**：单次 ~¥0.009（约¥93/万次）
+- **RAG+联网**：单次 ~¥0.031（约¥313/万次）
+- **ReAct**：单次 ~¥0.03-0.06
+- **月10万次调用**：纯RAG ~¥930/月，+联网 ~¥3,130/月
+
+### SaaS 健康基准（2026年）
+| 指标 | 健康线 | 优秀线 |
+|------|--------|--------|
+| LTV/CAC | ≥3:1 | ≥5:1 |
+| NRR | ≥110% | ≥125% |
+| CAC回收期 | <18个月 | <12个月 |
+| 续约率 | ≥90% | ≥95% |
+| 毛利率 | ≥70% | ≥80% |
+
+### AI产业链毛利率
+| 层级 | 毛利率 |
+|------|--------|
+| 模型层 | 20-40% |
+| 中间件层 | 30-50% |
+| 应用层（纯API租赁） | 10-25% |
+| 应用层（垂直整合） | 50-65% |
